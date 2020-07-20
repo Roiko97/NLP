@@ -30,9 +30,9 @@
 解释：F1-score是分类问题的一个衡量指标。它是精确率和召回率的调和平均数，最大为1，最小为0。
 
 公式如下：
-$$
-F_1 = \frac {2 \times P\times R} {P+R} = \frac {2\times TP} {样例总数+TP-TN}
-$$
+
+![](C:\Users\cheng\Desktop\NLP学习实践\Task01：赛题理解\img\1595221683(1).jpg)
+
 其中
 $$
 P表示查准率，R表示查全率
