@@ -30,9 +30,9 @@
 解释：F1-score是分类问题的一个衡量指标。它是精确率和召回率的调和平均数，最大为1，最小为0。
 
 公式如下：
-
-![](C:\Users\cheng\Desktop\NLP学习实践\Task01：赛题理解\img\1595221683(1).jpg)
-
+$$
+F_1 = \frac {2 \times P\times R} {P+R} = \frac {2\times TP} {样例总数+TP-TN}
+$$
 其中
 $$
 P表示查准率，R表示查全率
@@ -67,7 +67,21 @@ $$
 - 用head查看前5行
   - 第一列表示数据标签，第二列表示对应的序号
 
-![image-20200720124542077](C:\Users\cheng\AppData\Roaming\Typora\typora-user-images\image-20200720124542077.png)
+```python
+import pandas as pd
+import numpy as np
+train_df = pd.read_csv("train_set.csv",sep='\t')
+train_df.head()
+
+// 输出结果
+
+	label	text
+0	2	2967 6758 339 2021 1854 3731 4109 3792 4149 15...
+1	11	4464 486 6352 5619 2465 4802 1452 3137 5778 54...
+2	3	7346 4068 5074 3747 5681 6093 1777 2226 7354 6...
+3	2	7159 948 4866 2109 5520 2490 211 3956 5520 549...
+4	3	3646 3055 3055 2490 4659 6065 3370 5814 2465 5...
+```
 
 ## 7.解题思路
 
